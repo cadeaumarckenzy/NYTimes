@@ -4,18 +4,17 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Article {
+public class Article implements Serializable {
 
     public String getWebUrl() {
         return webUrl;
     }
-
     public String getHeadline() {
         return headline;
     }
-
     public String getThumNail() {
         return thumNail;
     }
